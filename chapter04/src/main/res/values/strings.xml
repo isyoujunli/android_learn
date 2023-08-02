@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">chapter04</string>
+    <string name="返回">按返回键或者点表情或者点击完成按钮，都可以关闭当前页面并返回上一个页面</string>
+    <string name="完成">完成</string>
+    <string name="跳到下一个页面">跳到下一个页面</string>
+    <string name="跳到第二个页面">跳到第二个页面</string>
+    <string name="跳到第一个页面">跳到第一个页面</string>
+    <string name="这里是登录成功页面">这里是登录成功页面</string>
+    <string name="这里是登录验证页面">这里是登录验证页面，此处省略了用户名和密码等</string>
+    <string name="跳转到登录成功页面">跳转到登录成功页面，登录成功后不必返回登录验证页面</string>
+    <string name="点击一下按钮向号码12345发起请求">点击一下按钮向号码12345发起请求</string>
+    <string name="今天天气不错">今天天气不错</string>
+    <string name="发送以上文字">发送以上文字</string>
+    <string name="请求传送数据">请求传送数据</string>
+    <string name="返回应答数据">返回应答数据</string>
+    <string name="weather_str">雨天</string>
+    <string name="first_short">first</string>
+    <string name="first_long">启停活动</string>
+    <string name="second_short">second</string>
+    <string name="second_long">来回跳转</string>
+    <string name="third_short">third</string>
+    <string name="third_long">登录返回</string>
+</resources>
