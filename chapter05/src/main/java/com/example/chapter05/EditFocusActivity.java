@@ -29,7 +29,6 @@ public class EditFocusActivity extends AppCompatActivity implements View.OnFocus
     public void onFocusChange(View view, boolean b) {
         // 判断密码编辑框是否获得焦点。hasFocus为true表示获得焦点，为false表示失去焦点
         if (b) {
-            et_phone
         }
 
     }
