@@ -3,8 +3,10 @@ package com.example.chapter05;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class EditFocusActivity extends AppCompatActivity implements View.OnFocusChangeListener {
 
@@ -29,8 +31,12 @@ public class EditFocusActivity extends AppCompatActivity implements View.OnFocus
     public void onFocusChange(View view, boolean b) {
         // 判断密码编辑框是否获得焦点。hasFocus为true表示获得焦点，为false表示失去焦点
         if (b) {
-
+            String phone = et_phone.getText().toString();
+            if (TextUtils.isEmpty(phone) || phone.length() < 11) {
+                // 手机号码编辑框请求焦点，也就是把光标移回手机号码编辑框
+                et_phone.requestFocus();
+                Toast.makeText(this, "请输入11 位手机号码", Toast.LENGTH_SHORT).show();
+            }
         }
-
     }
 }

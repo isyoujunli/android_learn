@@ -10,16 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".EditFocusActivity"
-            android:exported="false" />
-        <activity
             android:name=".DrawbbleNineActivity"
             android:exported="false" />
         <activity
             android:name=".DrawableShapeActivity"
             android:exported="false" />
         <activity
-            android:name=".EditBorderActivity"
+            android:name=".EditFocusActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
