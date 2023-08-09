@@ -9,9 +9,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".LoginSQLLiteActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginForget"
             android:exported="false" />
-
         <activity
             android:name=".LoginMainActivity"
             android:exported="true">

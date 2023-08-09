@@ -3,27 +3,18 @@ plugins {
 }
 
 android {
-    namespace 'com.example.chapter06'
-    compileSdk 34
+    namespace 'com.example.online_shopping_cart'
+    compileSdk 33
 
     defaultConfig {
-        applicationId 'com.example.chapter06'
+        applicationId "com.example.online_shopping_cart"
         minSdk 24
-        targetSdk 34
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]//指定数据库schema导出的位置
-            }
-        }
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
-
 
     buildTypes {
         release {
@@ -45,8 +36,4 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
-    implementation 'androidx.room:room-runtime:2.2.5'
-    annotationProcessor 'androidx.room:room-compiler:2.2.5'
-
 }

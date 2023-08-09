@@ -1,7 +1,6 @@
-package com.example.chapter06;
+package com.example.online_shopping_cart;
 
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,8 +10,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Log.d("ning", "MainActivity onCreate");
-
     }
 }
