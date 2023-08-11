@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.online_shopping_cart'
-    compileSdk 34
+    namespace 'com.example.chapter07_client'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.online_shopping_cart"
+        applicationId "com.example.chapter07_client"
         minSdk 24
         targetSdk 33
         versionCode 1
