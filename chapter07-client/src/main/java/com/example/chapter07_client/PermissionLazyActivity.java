@@ -72,7 +72,8 @@ public class PermissionLazyActivity extends AppCompatActivity implements View.On
                 break;
         }
     }
-    // 跳转到应用设置界面
+
+    // 跳转到应用设置界面n
     private void  jumpTOSettings(){
         Intent intent = new Intent();
         intent.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
