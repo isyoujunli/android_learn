@@ -11,10 +11,11 @@ import android.util.Log;
 import com.example.chapter07_server.database.UserDBHelper;
 
 public class UserInfoProvider extends ContentProvider {
+    // 声明一个用户数据库的帮助器对象
     private UserDBHelper dbHelper;
     private static final UriMatcher URI_MATCHER = new UriMatcher(UriMatcher.NO_MATCH);
 
-    private static final int USERS = 1;
+    private static final int USERS = 1; // Uri匹配时的代号
     private static final int USER = 2;
 
     static {
@@ -34,8 +35,9 @@ public class UserInfoProvider extends ContentProvider {
     @Override
     public Uri insert(Uri uri, ContentValues values) {
         Log.d("ning", "UserInfoProvider insert");
-        if (URI_MATCHER.match(uri) == USERS) {
-            SQLiteDatabase db = dbHelper.getWritableDatabase();
+        if (URI_MATCHER.match(uri) == USERS) { // 匹配到了用户信息表
+            SQLiteDatabase db = dbHelper.getWritableDatabase();// 获取SQLite数据库的写连接
+            // 向指定的表插入数据，返回记录的行号
             long rowId = db.insert(UserDBHelper.TABLE_NAME, null, values);
             /*if (rowId > 0) { // 判断插入是否执行成功
                 // 如果添加成功，就利用新记录的行号生成新的地址

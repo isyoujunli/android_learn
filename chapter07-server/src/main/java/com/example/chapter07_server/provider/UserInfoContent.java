@@ -5,6 +5,7 @@ import android.provider.BaseColumns;
 
 public class UserInfoContent implements BaseColumns {
 
+    // 这里的名称必须与AndroidManifest.xml里的android:authorities保持一致
     public static final String AUTHORITIES = "com.example.chapter07_server.provider.UserInfoProvider";
 
     //content://com.example.chapter07_server.provider.UserInfoProvider/user
