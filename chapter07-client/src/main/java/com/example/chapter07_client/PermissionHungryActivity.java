@@ -19,6 +19,7 @@ public class PermissionHungryActivity extends AppCompatActivity implements View.
     private static final String[] PERMISSIONS_CONTACTS = new String[]{
             Manifest.permission.READ_CONTACTS,//
             Manifest.permission.WRITE_CONTACTS
+
     };
     //定义通讯录的读写权限
     private static final String[] PERMISSIONS_SMS = new String[]{
