@@ -10,10 +10,8 @@
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
-
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
-
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <uses-feature
@@ -28,10 +26,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
 <!--        <activity-->
-<!--            android:name=".PermissionLazyActivity"-->
+<!--            android:name=".SendMmsActivity"-->
 <!--            android:exported="false" />-->
+        <!-- <activity -->
+        <!-- android:name=".MonitorSmsActivity" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".ContactAddActivity" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".PermissionLazyActivity" -->
+        <!-- android:exported="false" /> -->
         <activity
-            android:name=".PermissionLazyActivity"
+            android:name=".SendMmsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
